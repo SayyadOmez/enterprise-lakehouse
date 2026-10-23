@@ -1,0 +1,9 @@
+[project]
+name = "portfolio-pipeline"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.0", "sqlalchemy>=2.0", "requests>=2.31"]
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
